@@ -1,0 +1,399 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px 20px 20px 20px;
+    background-color: #FBDF55;
+    margin-bottom: 20px;
+}
+
+.menu-icon{
+	width: 18px;
+	margin-left: 20px;
+	display: none;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul a:hover{
+	color: #E05226;
+}
+
+
+li{
+	display: inline-block;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+	font-family: 'Space Mono', monospace;
+}
+
+
+/* --------------- Home Page --------------- */
+
+
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-40p{
+	flex-basis: 40%;
+	min-width: 240px;
+
+}
+
+.col-60p {
+	flex-basis: 60%;
+	min-width: 360px;
+}
+
+.introduction{
+	padding-left: 40px;
+}
+
+.introduction p {
+	padding-bottom: 20px;
+}
+
+.col-2 img{
+	max-width: 100%;
+	padding-left: 30px;
+	box-shadow: none;
+	border: 0px;
+}
+
+.col-2 h1{
+	font-size: 20px;
+	color: #253335;
+}
+
+.btn2{
+	display: inline-block;
+	background: #fff;
+	color: #253335;
+	padding: 12px 25px 12px 25px;
+	margin: 10px 10px 10px 0;
+	border-radius: 50px;
+	border-color: #EAB1D6;
+	border-style: solid;
+	border-width: 3px;
+	transition: background 0.2s;
+}
+
+.btn{
+	display: inline-block;
+	background: #EAB1D6;
+	color: #253335;
+	padding: 12px 25px 12px 25px;
+	margin: 10px 0 10px 10px;
+	border-radius: 50px;
+	border-color: #EAB1D6;
+	border-style: solid;
+	border-width: 3px;
+	transition: background 0.2s;
+}
+
+
+.btn:hover{
+	background: #FBDF55;
+	border-color: #FBDF55;
+	font-weight: bold;
+}
+
+.btn2:hover{
+	background: #FBDF55;
+	border-color: #FBDF55;
+	font-weight: bold;
+}
+
+
+.baking-today{
+	/*max-width: 1080px;*/
+	margin: auto;
+	padding: 25px;
+}
+
+.col-3{
+	position: relative; /*making position relative for the stickers*/
+	flex-basis: 25%;
+	min-width: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.col-3 p{
+	margin: 0;
+	padding: 0;
+}
+
+.col-3 h3{
+	margin: 0;
+	padding: 0;
+}
+
+.col-3 button{
+	font-family: Poppins, sans-serif;
+	background: #fff;
+	color: #253335;
+	padding: 10px 25px 10px 25px;
+	margin: 10px;
+	border-radius: 50px;
+	border-color: #EAB1D6;
+	border-style: solid;
+	border-width: 3px;
+	transition: background 0.2s;
+}
+
+
+.col-3 button:hover{
+	background: #FBDF55;
+	border-color: #FBDF55;
+	font-weight: bold;
+}
+
+/* #bs-sticker-home {
+	position: absolute;
+	right: 850px;
+	bottom: 150px;
+	z-index: 1;
+	max-width: 75px;
+} */
+
+.CinBun {
+	max-width: 300px;
+	/*padding-top: 25px;*/
+	display: inline-block;
+	/*padding: 20px;*/
+}
+
+.title{
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	line-height: 60px;
+	color: #253335;
+	overflow: hidden;
+}
+
+.title:before,
+.title:after {
+    background-color: #C4C4C4;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.title:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.title:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.quicklink {
+	color: #EAB1D6;
+	font-weight: bold;
+	float: right;
+}
+
+.quicklink:hover{
+	color: #E05226;
+}
+
+
+.located{
+	/*max-width: 1080px;*/
+	margin: auto;
+	padding: 25px;
+}
+
+
+.located .row img{
+	min-width: 50px;
+	flex-basis: 95%;
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+.located h3{
+	padding: 15px;
+}
+
+.located .col-3 p{
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.bun-car-heart-icons{
+	align-content: center;
+	max-width: 1080px;
+	margin: auto;
+	padding: 25px;
+}
+
+.bun-car-heart-icons img{
+	display: flex;
+	flex-shrink: 3;
+	justify-content: center;
+}
+
+
+
+
+/*----------------- Footer ---------------*/
+
+.footer{
+	width: 100%;
+	background: #253335;
+	font-size: 12px;
+	padding: 40px 0 20px;
+}
+
+.footer h3{
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.footer p {
+	color: #fff;
+}
+
+.footer-col-1, .footer-col-4{
+	flex-basis: 25%;
+	min-width: 250px;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: left;
+}
+
+.footer-col-2, .footer-col-3 {
+	flex-basis: 10%;
+	min-width: 250px;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: left;
+}
+
+ .footer ul{
+ 	margin-left: 25px;
+ 	margin-right: 25px;
+	list-style-type: none;
+	color: #fff;
+}
+
+ .footer label{
+	color: #fff;
+}
+
+ .footer button{
+ 	border-radius: 50px;
+ 	font-family: Poppins, sans-serif;
+ 	font-size: 10px;
+ 	background-color: #fff;
+ 	padding: 5px;
+ 	margin-left: 10px;
+ }
+
+ .footer li{
+ 	display: block;
+ }
+
+.footer hr{
+	border: none;
+	background:#b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+
+.copyright{
+	text-align: center;
+}
+
+
+
+/* --------------- All Products Page --------------- */
+
+.breadcrumbs{
+	padding: 20px;
+}
+
+.location-breadcrumbs{
+	color: #EAB1D6;
+	font-size: 12px;
+}
+
+.location-breadcrumbs:hover{
+	color: #E05226;
+}
+
+.cinnamon-rolls-title{
+	padding-left: 20px;
+	padding-bottom: 40px;
+}
+
+.cinnamon-rolls-title h1{
+	padding-bottom: 20px;
+}
+
+#bs-sticker{
+	position: absolute;
+	width: 60px;
+	z-index: 3;
+	top: 5px;
+	left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

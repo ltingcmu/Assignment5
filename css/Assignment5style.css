@@ -16,6 +16,11 @@ body{
     margin-bottom: 20px;
 }
 
+.navbar h3 {
+	color: #E05226;
+	padding-left: 50px;
+}
+
 .menu-icon{
 	width: 18px;
 	margin-left: 20px;
@@ -25,6 +30,7 @@ body{
 nav{
 	flex: 1;
 	text-align: right;
+	padding-right: 50px;
 }
 nav ul{
 	display: inline-block;
@@ -55,10 +61,7 @@ p{
 
 
 .container{
-	max-width: 1300px;
 	margin: auto;
-	padding-left: 25px;
-	padding-right: 25px;
 }
 .row{
 	display: flex;
@@ -76,6 +79,7 @@ p{
 .col-60p {
 	flex-basis: 60%;
 	min-width: 360px;
+	padding-left: 30px;
 }
 
 .introduction{
@@ -84,6 +88,11 @@ p{
 
 .introduction p {
 	padding-bottom: 20px;
+}
+
+.slogan{
+	max-width: 500px;
+    padding-left: 20px;
 }
 
 .col-2 img{
@@ -102,7 +111,7 @@ p{
 	display: inline-block;
 	background: #fff;
 	color: #253335;
-	padding: 12px 25px 12px 25px;
+	padding: 12px 50px 12px 50px;
 	margin: 10px 10px 10px 0;
 	border-radius: 50px;
 	border-color: #EAB1D6;
@@ -115,7 +124,7 @@ p{
 	display: inline-block;
 	background: #EAB1D6;
 	color: #253335;
-	padding: 12px 25px 12px 25px;
+	padding: 12px 50px 12px 50px;
 	margin: 10px 0 10px 10px;
 	border-radius: 50px;
 	border-color: #EAB1D6;
@@ -351,7 +360,7 @@ p{
 /* --------------- All Products Page --------------- */
 
 .breadcrumbs{
-	padding: 20px;
+	padding: 20px 0 20px 75px;
 }
 
 .location-breadcrumbs{
@@ -364,7 +373,7 @@ p{
 }
 
 .cinnamon-rolls-title{
-	padding-left: 20px;
+	padding-left: 75px;
 	padding-bottom: 40px;
 }
 

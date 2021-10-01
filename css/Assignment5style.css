@@ -238,6 +238,7 @@ p{
 	color: #EAB1D6;
 	font-weight: bold;
 	float: right;
+	padding-right: 75px;
 }
 
 .quicklink:hover{
@@ -357,7 +358,47 @@ p{
 
 
 
-/* --------------- All Products Page --------------- */
+/* --------------- The Modal (background)---------------  */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* ------------------------------ All Products Page ------------------------------ */
 
 .breadcrumbs{
 	padding: 20px 0 20px 75px;
@@ -391,18 +432,163 @@ p{
 
 
 
+/* ------------------------------ Products Details Page ------------------------------ */
+
+.col-60p-details{
+	flex-basis: 50%;
+	padding-right: 50px;
+}
+
+.col-60p-details h2{
+	padding: 10px 0 10px 0;
+	font-size: 18px;
+}
+
+.details-pic{
+	position: relative;
+}
+
+#bs-sticker-details{
+	position: absolute;
+	width: 60px;
+	z-index: 3;
+	top: 5px;
+	left: 15px;
+}
+
+.quantity-btn{
+	display: inline-block;
+	background: #fff;
+	color: #253335;
+	padding: 12px 50px 12px 50px;
+	margin: 10px 0 10px 10px;
+	border-radius: 10px;
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	transition: background 0.2s;
+}
+
+
+.quantity-btn:hover{
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+}
+
+/* ------------------------------- Dropdown Button ------------------------------------------*/
+.drop-btn {
+  background-color: #fff;
+  color: #253335;
+  padding: 12px 100px 12px 20px;
+  margin: 10px 0 10px 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px;
+  text-align: left;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;} 
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 
 
+/* ------------------------------- Nutrition Table ------------------------------------------*/
+
+.col-60p-nutrition {
+	flex-basis: 30%;
+	padding: 10px;
+}
+
+.col-60p-nutrition p{
+	font-size: 12px;
+}
+
+.col-60p-nutrition h1{
+	font-size: 18px;
+	color: #253335;
+	padding-bottom: 20px;
+}
 
 
-
-
-
-
-
-
-
-
+#nutritionfacts { 
+    background-color:white; 
+    border:1px #999999; 
+    padding:3px; width:244px; 
+}
+#nutritionfacts td { 
+    color: #253335; 
+    font-family:'Poppins',sans-serif; 
+    font-size:8pt; 
+    padding:0; 
+}
+#nutritionfacts td.header { 
+    font-family:'Poppins',sans-serif; 
+    font-size:28px; 
+    white-space:nowrap; 
+}        
+#nutritionfacts div.label { 
+    float:left; 
+    font-family:'Poppins',sans-serif; 
+}
+#nutritionfacts div.serving { 
+    font-family:'Poppins',sans-serif; 
+    font-size:8pt; 
+    text-align:center; 
+}
+#nutritionfacts div.weight { 
+    display:inline; 
+    font-family:'Poppins',sans-serif; 
+    padding-left:1px; 
+}
+#nutritionfacts div.dv { 
+    display:inline; 
+    float:right; 
+    font-family:'Poppins',sans-serif; 
+}
+#nutritionfacts table.vitamins td {  
+    font-family:'Poppins',sans-serif; 
+    white-space:nowrap; 
+    width: 40%;
+}
+#nutritionfacts div.line { 
+    border-top:1px solid #253335; 
+}
+#nutritionfacts div.labellight { 
+    float:left; 
+    font-family:'Poppins',sans-serif; 
+}
 
 

@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>Bun Bun Bake Shop!</title>
 	<link rel="stylesheet" href="css/Assignment5style.css">
+	<script src="js/Assignment5_js.js"></script>
 	<!------Google Fonts----------->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,16 +62,31 @@
 		<div class="row" style="padding:20px">
 			<!------<img id="bs-sticker-home" src="assets/BestSellerSticker.png"> ---->
 			<div class="col-3">
-				<img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Original Flavor">
+				<a href="Assignment5_ProductDetails.html"><img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Original Flavor"></a>
 				<h3>Original</h3>
 				<p>$5.00</p>
-				<button>Quick View</button>
+				<a href="Assignment5_ProductDetails.html"><button>Quick View</button></a>
 			</div>
 			<div class="col-3">
 				<img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Walnut Flavor">
 				<h3>Walnut</h3>
 				<p>$5.00</p>
-				<button>Quick View</button>
+				<button id="myBtn">Quick View</button>
+
+					<!------------------ Trigger/Open The Modal ------------------->
+
+							<!--------------- The Modal ------------->
+							<div id="myModal" class="modal">
+							  <!-------- Modal content -------------->
+							  <div class="modal-content">
+							    <span class="close">&times;</span>
+							    <h3>Walnut Cinnamon Roll</h3>
+							    <p>$5.00</p>
+							  </div>
+							</div>
+
+					<!------------------ End of The Modal ------------------->
+
 			</div>
 			<div class="col-3">
 				<img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Blackberry Flavor">

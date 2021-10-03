@@ -1,3 +1,21 @@
+// Overlay effect
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+
+
+
+
+
+
+
+
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 

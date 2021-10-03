@@ -446,6 +446,7 @@ p{
 
 .details-pic{
 	position: relative;
+	padding: 30px;
 }
 
 #bs-sticker-details{
@@ -459,6 +460,7 @@ p{
 .quantity-btn{
 	display: inline-block;
 	background: #fff;
+	font-family:'Poppins',sans-serif; 
 	color: #253335;
 	padding: 12px 50px 12px 50px;
 	margin: 10px 0 10px 10px;
@@ -469,19 +471,25 @@ p{
 	transition: background 0.2s;
 }
 
-
 .quantity-btn:hover{
 	background: #000;
 	color: #fff;
 	font-weight: bold;
 }
 
+.you-might-like{
+	padding: 50px;
+}
+
+
 /* ------------------------------- Dropdown Button ------------------------------------------*/
 .drop-btn {
   background-color: #fff;
+  font-family:'Poppins',sans-serif; 
   color: #253335;
   padding: 12px 100px 12px 20px;
   margin: 10px 0 10px 10px;
+  width: 350px;
   font-size: 16px;
   border-radius: 10px;
   border-color: #000;
@@ -502,6 +510,7 @@ p{
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
+  width: 350px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -542,6 +551,20 @@ p{
 	padding-bottom: 20px;
 }
 
+.col-60p-ingredients{
+	flex-basis: 50%;
+	padding: 10px;
+}
+
+.col-60p-ingredients p{
+	font-size: 12px;
+}
+
+.col-60p-ingredients h1{
+	font-size: 18px;
+	color: #253335;
+	padding-bottom: 20px;
+}
 
 #nutritionfacts { 
     background-color:white; 
@@ -550,45 +573,102 @@ p{
 }
 #nutritionfacts td { 
     color: #253335; 
-    font-family:'Poppins',sans-serif; 
+    font-family: 'Space Mono', monospace;
     font-size:8pt; 
     padding:0; 
 }
 #nutritionfacts td.header { 
-    font-family:'Poppins',sans-serif; 
+    font-family: 'Space Mono', monospace;
     font-size:28px; 
     white-space:nowrap; 
 }        
 #nutritionfacts div.label { 
     float:left; 
-    font-family:'Poppins',sans-serif; 
+    font-family: 'Space Mono', monospace;
 }
 #nutritionfacts div.serving { 
-    font-family:'Poppins',sans-serif; 
+    font-family: 'Space Mono', monospace;
     font-size:8pt; 
     text-align:center; 
 }
 #nutritionfacts div.weight { 
     display:inline; 
-    font-family:'Poppins',sans-serif; 
+    font-family: 'Space Mono', monospace;
     padding-left:1px; 
 }
 #nutritionfacts div.dv { 
     display:inline; 
     float:right; 
-    font-family:'Poppins',sans-serif; 
+    font-family: 'Space Mono', monospace;
 }
 #nutritionfacts table.vitamins td {  
-    font-family:'Poppins',sans-serif; 
+    font-family: 'Space Mono', monospace;
     white-space:nowrap; 
     width: 40%;
 }
 #nutritionfacts div.line { 
-    border-top:1px solid #253335; 
+    border-top:1px solid #999999; 
 }
 #nutritionfacts div.labellight { 
     float:left; 
-    font-family:'Poppins',sans-serif; 
+    font-family: 'Space Mono', monospace;
 }
+
+
+
+/* ------------------------------- Contact Us Page ------------------------------------------*/
+
+
+.contact-us{
+	width: 50%;
+	padding-left: 70px;
+	margin-bottom: 60px;
+}
+
+.contact-us button{
+	font-family: Poppins, sans-serif;
+	background: #fff;
+	color: #253335;
+	padding: 10px 25px 10px 25px;
+	margin: 10px;
+	border-radius: 50px;
+	border-color: #EAB1D6;
+	border-style: solid;
+	border-width: 3px;
+	transition: background 0.2s;
+}
+
+
+.contact-us button:hover{
+	background: #FBDF55;
+	border-color: #FBDF55;
+	font-weight: bold;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+#message{
+	height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 

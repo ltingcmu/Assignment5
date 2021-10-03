@@ -42,7 +42,7 @@
 				<img class="slogan" src="assets/RollWithUs_v2.png" alt="Roll with us">
 				<div class="introduction">
 					<h1> Bun Bun Bake Shop</h1>
-					<p>We are a local bakery operating out of Pittsburgh, PA specializing in unique, artisinal cinnamon rolls. Fresh, hand-made cinnamon buns are made daily with love!</p>
+					<p>We are a local bakery operating out of Pittsburgh, PA. We specialize in baking unique, artisinal cinnamon rolls. Fresh, hand-made, & organic cinnamon buns are made daily with love!</p>
 					<a href="" class="btn2">About Us</a>
 					<a href="Assignment5_Products.html" class="btn">Order Now</a>
 				</div>
@@ -65,41 +65,65 @@
 				<a href="Assignment5_ProductDetails.html"><img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Original Flavor"></a>
 				<h3>Original</h3>
 				<p>$5.00</p>
-				<button onclick="on()">Quick View</button>
-				<div id="overlay" onclick="off()"></div>
+				<button class="Quick-View-Home-Button" onclick="on()">Quick View</button>
+
+				<!---------- Quick View Pop-Up ----------->
+
+					<div id="overlay" onclick="off()">
+						<div id="text">
+							<a href="Assignment5_ProductDetails.html" id="quick-view-header">
+									<h3>Original Cinnamon Roll</h3>
+							</a>
+							<div id="quick-view-description">
+								<div class="CinBun-Quick-View-img">
+									<img src="assets/CinBun_QuickView.png" alt="Cinnamon Bun Original Flavor Quick View">
+								</div>
+								<div class="CinBun-Quick-View-text">
+									<h3>$5.00 / roll</h3>
+									<p>A favorite of the bakery staff and customers, this soft, delicate roll is perfumed by a sweet pure vanilla flavor for an effect and taste that is simply divine!</p>
+								</div>
+							</div>
+									
+								<h3>Quantity</h3>
+									<button class="quantity-btn-quick-view">1</button>
+									<button class="quantity-btn-quick-view">3</button>
+									<button class="quantity-btn-quick-view">6</button>
+									<button class="quantity-btn-quick-view">12</button>
+								<h3>Glazing</h3>
+									<div class="dropdown">
+									  <button onclick="myFunction()" class="drop-btn">None</button>
+									  <div id="myDropdown" class="dropdown-content">
+									    <a href="#">Sugar-Milk</a>
+									    <a href="#">Vanilla-Milk</a>
+									    <a href="#">Double Chocolate</a>
+									  </div>
+									</div>
+								<a href="" class="btn">Add to Cart</a>
+						</div>
+
+				<!------ End of Quick View Pop Up ----------->
+						
+				</div>
 			</div>
 			<div class="col-3">
 				<img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Walnut Flavor">
 				<h3>Walnut</h3>
 				<p>$5.00</p>
-				<button id="myBtn">Quick View</button>
-
-					<!------------------ Trigger/Open The Modal ------------------->
-
-							<!--------------- The Modal ------------->
-							<div id="myModal" class="modal">
-							  <!-------- Modal content -------------->
-							  <div class="modal-content">
-							    <span class="close">&times;</span>
-							    <h3>Walnut Cinnamon Roll</h3>
-							    <p>$5.00</p>
-							  </div>
-							</div>
-
-					<!------------------ End of The Modal ------------------->
+				<button class="Quick-View-Home-Button">Quick View</button>
 
 			</div>
 			<div class="col-3">
 				<img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Blackberry Flavor">
 				<h3>Blackberry</h3>
 				<p>$5.00</p>
-				<button>Quick View</button>
+				<button class="Quick-View-Home-Button">Quick View</button>
 			</div>
 		</div>
 	<a class="quicklink" href="">See All Products ></a>
 	</div>
 
 	<!------Where We're Located Section----------->
+
 	<div class="located">
 		<h2 class="title">Where We're Located</h2>
 		<div class="row">

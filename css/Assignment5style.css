@@ -88,6 +88,7 @@ p{
 
 .introduction p {
 	padding-bottom: 20px;
+	padding-right: 20px;
 }
 
 .slogan{
@@ -171,7 +172,7 @@ p{
 	padding: 0;
 }
 
-.col-3 button{
+.Quick-View-Home-Button{
 	font-family: Poppins, sans-serif;
 	background: #fff;
 	color: #253335;
@@ -185,7 +186,7 @@ p{
 }
 
 
-.col-3 button:hover{
+.Quick-View-Home-Button:hover{
 	background: #FBDF55;
 	border-color: #FBDF55;
 	font-weight: bold;
@@ -358,7 +359,7 @@ p{
 
 
 
-/* --------------- The Modal (background)---------------  */
+/* --------------- Quick View Overlay Pop Up ---------------  */
 
 
 #overlay {
@@ -376,47 +377,66 @@ p{
 }
 
 
-
-
-
-
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #253335;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  width: 500px;
+  background-color: white;
+  border-color:  #EAB1D6;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  font-size: 12px;
 }
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+#quick-view-header{
+	color: black;
+	font-size: 16px;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+#quick-view-header:hover{
+	color: #E05226;
 }
 
+.CinBun-Quick-View-img{
+    display: inline-block;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.CinBun-Quick-View-img img{
+	max-width: 150px;
+}
+
+.CinBun-Quick-View-text{
+    display: inline-block;
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.quantity-btn-quick-view{
+	display: inline-block;
+	background: #fff;
+	font-family:'Poppins',sans-serif; 
+	font-size: 12px;
+	color: #253335;
+	padding: 10px 20px 10px 20px;
+	margin: 10px 0 10px 10px;
+	border-radius: 10px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	transition: background 0.2s;
+}
+
+.quantity-btn-quick-view:hover{
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+}
 
 
 /* ------------------------------ All Products Page ------------------------------ */
@@ -504,6 +524,7 @@ p{
 
 
 /* ------------------------------- Dropdown Button ------------------------------------------*/
+
 .drop-btn {
   background-color: #fff;
   font-family:'Poppins',sans-serif; 

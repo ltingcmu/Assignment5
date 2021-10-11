@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bun Bun Bake Shop</title>
+	<link rel="stylesheet" href="css/Assignment5style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"> 
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap">
+</head>
+<body>
+
+
+	<div class="header">
+	<div class ="container">
+
+		<!------Navigation Bar----------->
+		<div class="navbar">
+			<div class="logo">
+				<!---- Logo image: <img src="assets/BBBSLogo.png" alt="Bun Bun Bake Shop">--->
+				<h3>Bun Bun Bake Shop</h3>
+			</div>
+				<nav>
+					<ul>
+						<li><a href="index.html">Shop</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="Assignment5_Contact.html">Contact</a></li>
+						<li><a href="">Your Cart</a></li>
+					</ul>
+				<img class="cart-icon" src="assets/CartIcon.png" width="20px" height="20px">
+				</nav>
+		</div>
+
+		<!------Location Breadcrumbs Section----------->
+		<div class="breadcrumbs">
+			<p>
+				<a href="index.html" class="location-breadcrumbs">Home | </a> 
+				<a href="Assignment5_Products.html" class="location-breadcrumbs">All Products | </a>
+				<a href="" class="location-breadcrumbs"><strong>Original Cinnamon Roll</strong></a>
+			</p>
+		</div>
+
+	</div>
+
+		<!------Product Details Section----------->
+
+		<div class="row">
+			<div class="details-pic">
+				<img id="bs-sticker-details" src="assets/BestSellerSticker.png" alt="Best Seller">
+				<img src="assets/CinBunDetailsPage.png" alt="Cinnamon Bun Details Page Picture" class="CinBun-Details">
+			</div>
+
+			<div class="col-60p-details">
+				<h1>Original Cinnamon Roll</h1>
+					<h2>$5.00 / roll</h2>
+					<p>A favorite of the bakery staff and customers, this soft, delicate roll is perfumed by a sweet pure vanilla flavor for an effect and taste that is simply divine!</p>
+				<h2>Quantity</h2>
+					<button class="quantity-btn">1</button>
+					<button class="quantity-btn">3</button>
+					<button class="quantity-btn">6</button>
+					<button class="quantity-btn">12</button>
+				<h2>Glazing</h2>
+					<div class="dropdown">
+					  <button onclick="myFunction()" class="drop-btn">None</button>
+					  <div id="myDropdown" class="dropdown-content">
+					    <a href="#">Sugar-Milk</a>
+					    <a href="#">Vanilla-Milk</a>
+					    <a href="#">Double Chocolate</a>
+					  </div>
+					</div>
+
+				<a href="" class="btn">Add to Cart</a>
+
+			</div>
+		</div>	
+
+		<!------Nutrition and Ingredients Details Section----------->
+		<div class="details-container">
+			<div class="col-60p-nutrition">
+				<h1>Nutrition</h1>
+
+				    <div id="nutritionfacts">
+				        <table cellspacing="0" cellpadding="0">
+				            <tbody>
+				            <tr>
+				                <td><div class="serving">Per 180.0g Serving Size</div></td>
+				            </tr>
+				            <tr style="height: 5px">
+				                <td bgcolor="#999999"></td>
+				            </tr>
+				            <tr>
+				                <td style="font-size: 7pt"><div class="line">Amount Per Serving</div></td>
+				            </tr>
+				            <tr>
+				                <td>
+				                    <div class="line">
+				                    <div class="label">Calories <div class="weight">230</div></div><div style="padding-top: 1px; float: right;" class="labellight">Calories from Fat <div class="weight">56</div></div>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <td><div class="line"><div class="dvlabel">% Daily Value<sup>*</sup></div></div></td>
+				            </tr>
+				            <tr>
+				                <td>
+				                    <div class="line">
+				                    <div class="label">Total Fat <div class="weight">6.2g</div></div>
+				                    <div class="dv">10%</div>
+				                    </div>
+				                </td>
+				            </tr>
+				                        <tr>
+				                <td class="indent">
+				                    <div class="line">
+				                    <div class="labellight">Saturated Fat <div class="weight">3.5g</div></div>
+				                    <div class="dv">17%</div>
+				                    </div>
+				                </td>
+				            </tr>
+				                        <tr>
+				                <td class="indent">
+				                    <div class="line">
+				                    <div class="labellight"><i>Trans</i> Fat <div class="weight">0.0g</div></div>
+				                    </div>
+				                </td>
+				            </tr>
+				                        <tr>
+				                <td>
+				                    <div class="line">
+				                    <div class="label">Cholesterol <div class="weight">22mg</div></div>
+				                    <div class="dv">7%</div>
+				                    </div>
+				                </td>
+				            </tr>
+				                        <tr>
+				                <td>
+				                    <div class="line">
+				                    <div class="label">Sodium <div class="weight">618mg</div></div>
+				                    <div class="dv">26%</div>
+				                    </div>
+				                </td>
+				            </tr>
+				                        <tr>
+				                <td>
+				                    <div class="line">
+				                    <div class="label">Total Carbohydrates <div class="weight">32.2g</div></div>
+				                    <div class="dv">11%</div>
+				                    </div>
+				                </td>
+				            </tr>
+				                        <tr>
+				                <td class="indent">
+				                    <div class="line">
+				                    <div class="labellight">Dietary Fiber <div class="weight">5.2g</div></div>
+				                    <div class="dv">21%</div>
+				                </div></td>
+				            </tr>
+				                        <tr>
+				                <td class="indent">
+				                    <div class="line">
+				                    <div class="labellight">Sugars <div class="weight">3.3g</div></div>
+				                    </div>
+				                </td>
+				            </tr>
+				                        <tr>
+				                <td>
+				                    <div class="line">
+				                    <div class="label">Protein <div class="weight">11.4g</div>
+				                    </div>
+				                </div></td>
+				            </tr>
+				            <tr style="height: 5px">
+				                <td bgcolor="#999999"></td>
+				            </tr>
+				                        <tr>
+				                <td>
+				                    <table cellspacing="0" cellpadding="0" border="0" class="vitamins">
+				                    <tbody>
+				                    <tr>
+				                        <td>Vitamin A &nbsp;&nbsp; 10%</td>
+				                        <td align="center">•</td>
+				                        <td align="right">Calcium &nbsp;&nbsp; 19%</td>
+				                    </tr>
+				                    <tr>
+				                        <td>Vitamin B &nbsp;&nbsp; 22%</td>
+				                        <td align="center">•</td>
+				                        <td align="right">Iron &nbsp;&nbsp; 13%</td>
+				                    </tr>
+				                    <tr>
+				                        <td>Vitamin C &nbsp;&nbsp; 16%</td>
+				                        <td align="center">•</td>
+				                        <td align="right">Potassium &nbsp;&nbsp; 7%</td>
+				                    </tr>
+				                    <tr>
+				                        <td>Vitamin D &nbsp;&nbsp; 5%</td>
+				                        <td align="center">•</td>
+				                        <td align="right">Folate &nbsp;&nbsp; 40%</td>
+				                    </tr>                        
+				                    </tbody></table>
+				                </td>
+				            </tr>
+				                        <tr>
+				                <td><div class="line">
+				                <div class="labellight">* Based on a regular <a href="#">2000 calorie diet</a>
+				                <br><br><i>Nutritional details are an estimate and should only be used as a guide for approximation.</i>
+				                </div>
+				                </div>
+				                </td>
+				            </tr>
+				        </tbody></table>
+    				</div>
+
+
+
+			</div>
+
+			<div class="col-60p-ingredients">
+				<h1>Ingredients</h1>
+				<p>Organic Wheat Flour, Organic Cane Sugar, Water, Organic Palm Oil, Baking Powder (sodium acid pyrophosphate, baking soda) , Organic Expeller-Pressed Sunflower Oil, Organic Invert Syrup, Organic Cinnamon, Sea Salt, Xanthan Gum, Organic Wheat Starch, Organic Tapioca Starch, Organic Vanilla Extract, Organic Rice Extract, Locust Bean Gum, Guar Gum.
+				<br>
+				<br>
+				Frosting: Cream Cheese, (Pasteurized Milk and Cream, Cheese Cultures, Salt, Carob bean Gum, Guar Gum)
+				<br>
+				<br>
+				CONTAINS WHEAT; MAY CONTAIN MILK INGREDIENTS</p>
+			</div>
+
+		</div>
+
+<!------Additional Products Section----------->
+
+	<div class="you-might-like">
+		<h2>You might also like</h2>
+	</div>
+
+
+	<div class="cinnamon-rolls-products" style="padding-bottom: 50px;">
+			<div class="row">
+				<div class="col-3">
+					<img id="bs-sticker" src="assets/BestSellerSticker.png" alt="Best Seller">
+					<a href="Assignment5_ProductDetails.html"><img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Original Flavor"></a>
+					<h3>Original</h3>
+					<p>$5.00</p>
+					<a href="Assignment5_ProductDetails.html"><button class="Quick-View-Home-Button">View Details</button></a>
+				</div>
+				<div class="col-3">
+					<img id="bs-sticker" src="assets/GlutenFreeSticker.png" alt="Gluten Free">
+					<img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Original Gluten Free Flavor">
+					<h3>Original Gluten Free</h3>
+					<p>$5.00</p>
+					<button class="Quick-View-Home-Button">View Details</button>
+				</div>
+				<div class="col-3">
+					<img class="CinBun" src="assets/CinBun.png" alt="Cinnamon Bun Blackberry Flavor">
+					<h3>Blackberry</h3>
+					<p>$5.00</p>
+					<button class="Quick-View-Home-Button">View Details</button>
+				</div>
+			</div>
+	</div>
+
+<!------Footer Section----------->
+
+	<div class="footer">
+		<div class="container">
+		<div class="row">
+				<div class="footer-col-1">
+					<h3>Bun Bun Bake Shop</h3>
+					<p>Delivering fresh cinnamon rolls since 2000</p>
+				</div>
+				<div class="footer-col-2">
+					<ul>
+						<li>Our Story</li>
+						<li>Locations</li>
+						<li>Gift Cards</li>
+						<li>Careers</li>
+					</ul>
+				</div>
+				<div class="footer-col-3">
+					<ul>
+						<li>Privacy Policy</li>
+						<li>Terms of Use</li>
+						<li>Contact Us</li>
+						<li>Refund Policy</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Sign up for our newsletter to stay in the loop</h3>
+					<label for="email">Enter email address</label>
+					<input type="email" id="email" name="email"><button>Submit</button>
+				</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2021</p>
+	</div>
+
+		

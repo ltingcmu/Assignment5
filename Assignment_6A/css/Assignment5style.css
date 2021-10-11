@@ -1,0 +1,725 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px 20px 20px 20px;
+    background-color: #FBDF55;
+    margin-bottom: 20px;
+}
+
+.navbar h3 {
+	color: #E05226;
+	padding-left: 50px;
+}
+
+.menu-icon{
+	width: 18px;
+	margin-left: 20px;
+	display: none;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+	padding-right: 50px;
+}
+nav ul{
+	display: inline-block;
+	list-style-type: none;
+}
+
+nav ul a:hover{
+	color: #E05226;
+}
+
+
+li{
+	display: inline-block;
+	margin-right: 20px;
+}
+a{
+	text-decoration: none;
+	color: #555;
+}
+
+p{
+	color: #555;
+	font-family: 'Space Mono', monospace;
+}
+
+
+/* --------------- Home Page --------------- */
+
+
+.container{
+	margin: auto;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.col-40p{
+	flex-basis: 40%;
+	min-width: 240px;
+
+}
+
+.col-60p {
+	flex-basis: 60%;
+	min-width: 360px;
+	padding-left: 30px;
+}
+
+.introduction{
+	padding-left: 40px;
+}
+
+.introduction p {
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+
+.slogan{
+	max-width: 500px;
+    padding-left: 20px;
+}
+
+.col-2 img{
+	max-width: 100%;
+	padding-left: 30px;
+	box-shadow: none;
+	border: 0px;
+}
+
+.col-2 h1{
+	font-size: 20px;
+	color: #253335;
+}
+
+.btn2{
+	display: inline-block;
+	background: #fff;
+	color: #253335;
+	padding: 12px 50px 12px 50px;
+	margin: 10px 10px 10px 0;
+	border-radius: 50px;
+	border-color: #EAB1D6;
+	border-style: solid;
+	border-width: 3px;
+	transition: background 0.2s;
+}
+
+.btn{
+	display: inline-block;
+	background: #EAB1D6;
+	color: #253335;
+	padding: 12px 50px 12px 50px;
+	margin: 10px 0 10px 10px;
+	border-radius: 50px;
+	border-color: #EAB1D6;
+	border-style: solid;
+	border-width: 3px;
+	transition: background 0.2s;
+}
+
+
+.btn:hover{
+	background: #FBDF55;
+	border-color: #FBDF55;
+	font-weight: bold;
+}
+
+.btn2:hover{
+	background: #FBDF55;
+	border-color: #FBDF55;
+	font-weight: bold;
+}
+
+
+.baking-today{
+	/*max-width: 1080px;*/
+	margin: auto;
+	padding: 25px;
+}
+
+.col-3{
+	position: relative; /*making position relative for the stickers*/
+	flex-basis: 25%;
+	min-width: 300px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.col-3 p{
+	margin: 0;
+	padding: 0;
+}
+
+.col-3 h3{
+	margin: 0;
+	padding: 0;
+}
+
+.Quick-View-Home-Button{
+	font-family: Poppins, sans-serif;
+	background: #fff;
+	color: #253335;
+	padding: 10px 25px 10px 25px;
+	margin: 10px;
+	border-radius: 50px;
+	border-color: #EAB1D6;
+	border-style: solid;
+	border-width: 3px;
+	transition: background 0.2s;
+}
+
+
+.Quick-View-Home-Button:hover{
+	background: #FBDF55;
+	border-color: #FBDF55;
+	font-weight: bold;
+}
+
+/* #bs-sticker-home {
+	position: absolute;
+	right: 850px;
+	bottom: 150px;
+	z-index: 1;
+	max-width: 75px;
+} */
+
+.CinBun {
+	max-width: 300px;
+	/*padding-top: 25px;*/
+	display: inline-block;
+	/*padding: 20px;*/
+}
+
+.title{
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	line-height: 60px;
+	color: #253335;
+	overflow: hidden;
+}
+
+.title:before,
+.title:after {
+    background-color: #C4C4C4;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.title:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.title:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+.quicklink {
+	color: #EAB1D6;
+	font-weight: bold;
+	float: right;
+	padding-right: 75px;
+}
+
+.quicklink:hover{
+	color: #E05226;
+}
+
+
+.located{
+	/*max-width: 1080px;*/
+	margin: auto;
+	padding: 25px;
+}
+
+
+.located .row img{
+	min-width: 50px;
+	flex-basis: 95%;
+	text-align: center;
+	margin: 20px 0 20px 0;
+}
+
+.located h3{
+	padding: 15px;
+}
+
+.located .col-3 p{
+	text-align: left;
+	margin-left: 60px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+.bun-car-heart-icons{
+	align-content: center;
+	max-width: 1080px;
+	margin: auto;
+	padding: 25px;
+}
+
+.bun-car-heart-icons img{
+	display: flex;
+	flex-shrink: 3;
+	justify-content: center;
+}
+
+
+
+
+/*----------------- Footer ---------------*/
+
+.footer{
+	width: 100%;
+	background: #253335;
+	font-size: 12px;
+	padding: 40px 0 20px;
+}
+
+.footer h3{
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.footer p {
+	color: #fff;
+}
+
+.footer-col-1, .footer-col-4{
+	flex-basis: 25%;
+	min-width: 250px;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: left;
+}
+
+.footer-col-2, .footer-col-3 {
+	flex-basis: 10%;
+	min-width: 250px;
+	margin-bottom: 20px;
+	padding: 10px;
+	text-align: left;
+}
+
+ .footer ul{
+ 	margin-left: 25px;
+ 	margin-right: 25px;
+	list-style-type: none;
+	color: #fff;
+}
+
+ .footer label{
+	color: #fff;
+}
+
+ .footer button{
+ 	border-radius: 50px;
+ 	font-family: Poppins, sans-serif;
+ 	font-size: 10px;
+ 	background-color: #fff;
+ 	padding: 5px;
+ 	margin-left: 10px;
+ }
+
+ .footer li{
+ 	display: block;
+ }
+
+.footer hr{
+	border: none;
+	background:#b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+
+.copyright{
+	text-align: center;
+}
+
+
+
+/* --------------- Quick View Overlay Pop Up ---------------  */
+
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #253335;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  width: 500px;
+  background-color: white;
+  border-color:  #EAB1D6;
+  padding: 20px;
+  font-size: 12px;
+}
+
+#quick-view-header{
+	color: black;
+	font-size: 16px;
+}
+
+#quick-view-header:hover{
+	color: #E05226;
+}
+
+.CinBun-Quick-View-img{
+    display: inline-block;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.CinBun-Quick-View-img img{
+	max-width: 150px;
+}
+
+.CinBun-Quick-View-text{
+    display: inline-block;
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.quantity-btn-quick-view{
+	display: inline-block;
+	background: #fff;
+	font-family:'Poppins',sans-serif; 
+	font-size: 12px;
+	color: #253335;
+	padding: 10px 30px 10px 30px;
+	margin: 10px 0 10px 10px;
+	border-radius: 10px;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+	transition: background 0.2s;
+}
+
+.quantity-btn-quick-view:hover{
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+}
+
+
+/* ------------------------------ All Products Page ------------------------------ */
+
+.breadcrumbs{
+	padding: 20px 0 20px 75px;
+}
+
+.location-breadcrumbs{
+	color: #EAB1D6;
+	font-size: 12px;
+}
+
+.location-breadcrumbs:hover{
+	color: #E05226;
+}
+
+.cinnamon-rolls-title{
+	padding-left: 75px;
+	padding-bottom: 40px;
+}
+
+.cinnamon-rolls-title h1{
+	padding-bottom: 20px;
+}
+
+#bs-sticker{
+	position: absolute;
+	width: 60px;
+	z-index: 3;
+	top: 5px;
+	left: 15px;
+}
+
+
+
+/* ------------------------------ Products Details Page ------------------------------ */
+
+.col-60p-details{
+	flex-basis: 50%;
+	padding-right: 50px;
+}
+
+.col-60p-details h2{
+	padding: 10px 0 10px 0;
+	font-size: 18px;
+}
+
+.details-pic{
+	position: relative;
+	padding: 30px;
+}
+
+#bs-sticker-details{
+	position: absolute;
+	width: 60px;
+	z-index: 3;
+	top: 5px;
+	left: 15px;
+}
+
+.quantity-btn{
+	display: inline-block;
+	background: #fff;
+	font-family:'Poppins',sans-serif; 
+	color: #253335;
+	padding: 12px 50px 12px 50px;
+	margin: 10px 0 10px 10px;
+	border-radius: 10px;
+	border-color: #000;
+	border-style: solid;
+	border-width: 1px;
+	transition: background 0.2s;
+}
+
+.quantity-btn:hover{
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+}
+
+.you-might-like{
+	padding: 50px;
+}
+
+
+/* ------------------------------- Dropdown Button ------------------------------------------*/
+
+.drop-btn {
+  background-color: #fff;
+  font-family:'Poppins',sans-serif; 
+  color: #253335;
+  padding: 12px 100px 12px 20px;
+  margin: 10px 0 10px 10px;
+  width: 350px;
+  font-size: 16px;
+  border-radius: 10px;
+  border-color: #000;
+  border-style: solid;
+  border-width: 1px;
+  text-align: left;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  width: 350px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;} 
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+/* ------------------------------- Nutrition Table ------------------------------------------*/
+
+.details-container{
+	display: table;
+	width: 100%;
+	padding: 20px 75px;
+	margin-top: 30px;
+}
+
+.col-60p-nutrition {
+	display: table-cell;
+	flex-basis: 30%;
+	padding: 10px;
+}
+
+.col-60p-nutrition p{
+	font-size: 12px;
+}
+
+.col-60p-nutrition h1{
+	font-size: 18px;
+	color: #253335;
+	padding-bottom: 20px;
+}
+
+.col-60p-ingredients{
+	width: 60%;
+	display: table-cell;
+	padding: 10px 60px;
+}
+
+.col-60p-ingredients p{
+	font-size: 12px;
+}
+
+.col-60p-ingredients h1{
+	font-size: 18px;
+	color: #253335;
+	padding-bottom: 20px;
+}
+
+#nutritionfacts { 
+    background-color:white; 
+    border:1px #999999; 
+    width: 70%; 
+}
+#nutritionfacts td { 
+    color: #253335; 
+    font-family: 'Space Mono', monospace;
+    font-size:8pt; 
+    padding:0; 
+}
+#nutritionfacts td.header { 
+    font-family: 'Space Mono', monospace;
+    font-size:28px; 
+    white-space:nowrap; 
+}        
+#nutritionfacts div.label { 
+    float:left; 
+    font-family: 'Space Mono', monospace;
+}
+#nutritionfacts div.serving { 
+    font-family: 'Space Mono', monospace;
+    font-size:8pt; 
+    text-align:center; 
+}
+#nutritionfacts div.weight { 
+    display:inline; 
+    font-family: 'Space Mono', monospace;
+    padding-left:1px; 
+}
+#nutritionfacts div.dv { 
+    display:inline; 
+    float:right; 
+    font-family: 'Space Mono', monospace;
+}
+#nutritionfacts table.vitamins td {  
+    font-family: 'Space Mono', monospace;
+    white-space:nowrap; 
+    width: 40%;
+}
+#nutritionfacts div.line { 
+    border-top:1px solid #999999; 
+}
+#nutritionfacts div.labellight { 
+    float:left; 
+    font-family: 'Space Mono', monospace;
+}
+
+
+
+/* ------------------------------- Contact Us Page ------------------------------------------*/
+
+
+.contact-us{
+	width: 50%;
+	padding-left: 70px;
+	margin-bottom: 60px;
+}
+
+.contact-us button{
+	font-family: Poppins, sans-serif;
+	background: #fff;
+	color: #253335;
+	padding: 10px 25px 10px 25px;
+	margin: 10px;
+	border-radius: 50px;
+	border-color: #EAB1D6;
+	border-style: solid;
+	border-width: 3px;
+	transition: background 0.2s;
+}
+
+
+.contact-us button:hover{
+	background: #FBDF55;
+	border-color: #FBDF55;
+	font-weight: bold;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+#message{
+	height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

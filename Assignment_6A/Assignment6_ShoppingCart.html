@@ -47,7 +47,52 @@
 			<h1>Your Cart</h1>
 		</div>
 
-		<!------ Items and Cart Section----------->
+		<section class="container-cart content-section">
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="assets/CinBun.png" width="100" height="100">
+                        <span class="cart-item-title">Original Cinnamon Roll</span>
+	                       <div class="product-badge">
+							<span class="product-badge-text">BEST SELLER</span>
+							</div>
+                    </div>
+                    <span class="cart-price cart-column">$5.00</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE<img src="assets/trash_icon.png" alt="trash can icon" class="trash-icon-img"></button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="assets/CinBun.png" width="100" height="100">
+                        <span class="cart-item-title">Pumpkin Spice Cinnamon Roll</span>
+                        <div class="product-badge">
+							<span class="product-badge-text">LIMITED TIME</span>
+							</div>
+                    </div>
+                    <span class="cart-price cart-column">$5.00</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="3">
+                        <button class="btn btn-danger" type="button">REMOVE<img src="assets/trash_icon.png" alt="trash can icon" class="trash-icon-img"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$10.00</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+
+
+		<!------ Items and Cart Section personal test 
 
 		<div class="shopping-bag-container">
 
@@ -79,9 +124,7 @@
 
 
 					</div>
-
-
-			</div>
+			----------->
 
 
 

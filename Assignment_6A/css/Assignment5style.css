@@ -787,15 +787,15 @@ source:  https://www.youtube.com/watch?v=YeFzkC2awTM
 ------------------------------------------*/
 
 .trash-icon-img{
-	width: 18px;
+	width: 16px;
 	height: 18px;
-	padding-left: 5px;
 }
 
 
 .container-cart{
     margin: 0 auto;
     padding: 0 4.5em;
+    max-width: 1200px;
 }
 
 .cart-column {
@@ -822,7 +822,8 @@ source:  https://www.youtube.com/watch?v=YeFzkC2awTM
 }
 
 .cart-quantity {
-    width: 35%;
+    width: 25%;
+    padding-left: 20px;
 }
 
 .cart-item-title {
@@ -854,7 +855,7 @@ source:  https://www.youtube.com/watch?v=YeFzkC2awTM
 }
 
 .btn-danger:hover {
-    background-color: #CC4C4C;
+    background-color: black;
 }
 
 .cart-quantity-input {
@@ -879,7 +880,7 @@ source:  https://www.youtube.com/watch?v=YeFzkC2awTM
 }
 
 .cart-total {
-    text-align: center;
+    text-align: right;
     margin-top: 20px;
     padding-left: 35px;
     font-size: 1.2em;
@@ -892,16 +893,22 @@ source:  https://www.youtube.com/watch?v=YeFzkC2awTM
     margin-right: 20px;
 }
 
+.cart-shipping-title{
+	font-weight: none;
+    font-size: 1.0em;
+    color: black;
+    margin-right: 20px;
+}
+
 .cart-total-price {
     color: #333;
     font-size: 1.1em;
+    padding: 0 65px;
 }
 
 .btn-purchase {
 	font-family: Poppins, sans-serif;
-    display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+    font-size: 1.25em;
 }
 
 

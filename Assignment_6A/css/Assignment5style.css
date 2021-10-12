@@ -711,15 +711,73 @@ input[type=text], select, textarea {
 }
 
 
+/* ------------------------------- Shopping Cart Page ------------------------------------------*/
 
 
+.shopping-bag-container{
+	margin: 75px;
+
+}
 
 
+.js-items{
 
+}
 
+.shopping-bag-header{
+	display: block;
 
+}
 
+.shopping-bag-header-item{
+	display: inline-block;
 
+}
+.shopping-bag-header-price{
+	display: inline-block;
+	float: right;
 
+}
+
+.shoppingbag-row{
+	display: flex;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid #e4e4e4;;
+}
+
+.u-flex{
+	display: flex;
+}
+
+.shoppingbag-image img{
+	width: 50%;
+	flex-direction: row;
+    display: flex;
+}
+
+.shopping-bag_prod-info {
+	display: block;
+    flex: 2;
+}
+
+.product-badge{
+	font-family: Poppins,Arial,sans-serif;
+    font-size: 0.75rem;
+    padding: 0 .9rem;
+    background-color: #fff;
+    color: #000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 1px;
+    border: 1px solid #e4e4e4;
+    min-height: 1.2rem;
+}
+
+.product-badge-text{
+	letter-spacing: .02142857rem;
+}
 
 

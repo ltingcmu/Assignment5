@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Bun Bun Bake Shop</title>
 	<link rel="stylesheet" href="css/Assignment5style.css">
+	<script src="js/Assignment5_js.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"> 
@@ -55,22 +56,42 @@
 				<h1>Original Cinnamon Roll</h1>
 					<h2>$5.00 / roll</h2>
 					<p>A favorite of the bakery staff and customers, this soft, delicate roll is perfumed by a sweet pure vanilla flavor for an effect and taste that is simply divine!</p>
-				<h2>Quantity</h2>
-					<button class="quantity-btn">1</button>
-					<button class="quantity-btn">3</button>
-					<button class="quantity-btn">6</button>
-					<button class="quantity-btn">12</button>
-				<h2>Glazing</h2>
-					<div class="dropdown">
-					  <button onclick="myFunction()" class="drop-btn">None</button>
-					  <div id="myDropdown" class="dropdown-content">
-					    <a href="#">Sugar-Milk</a>
-					    <a href="#">Vanilla-Milk</a>
-					    <a href="#">Double Chocolate</a>
-					  </div>
-					</div>
+				
+				<form id="product-selections">
 
-				<a href="" class="btn">Add to Cart</a>
+					<h2>Quantity</h2>
+
+						<input type="radio" name="quantity" value="1" id="radio-one"/>
+						<label for="1">1</label>
+						<input type="radio" name="quantity" value="3" id="radio-two"/>
+						<label for="3">3</label>
+						<input type="radio" name="quantity" value="6" id="radio-three"/>
+						<label for="6">6</label>
+						<input type="radio" name="quantity" value="12" id="radio-four"/>
+						<label for="12">12</label>
+
+
+						<!--- Old buttons 
+							<button class="quantity-btn">1</button>
+							<button class="quantity-btn">3</button>
+							<button class="quantity-btn">6</button>
+							<button class="quantity-btn">12</button>
+						--->
+
+					<h2>Glazing</h2>
+					
+						<div class="dropdown">
+						  <select id="myDropdown" name="glazing" class="dropdown-content">
+						    <option value="none">None</option>
+						    <option value="sugar-milk">Sugar-Milk</option>
+						    <option value="vanilla-milk">Vanilla-Milk</option>
+						    <option value="double-chocolate">Double Chocolate</option>
+						  </select>
+						</div>
+
+					<button onclick="addToCart();" class="btn">Add to Cart</button>
+
+				</form>
 
 			</div>
 		</div>	

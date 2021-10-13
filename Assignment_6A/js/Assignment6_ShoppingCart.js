@@ -4,8 +4,8 @@
             //             <img class="cart-item-image" src="assets/CinBun.png" width="100" height="100">
             //             <span class="cart-item-title">Original Cinnamon Roll</span>
             //              <div class="product-badge">
-            //   <span class="product-badge-text">BEST SELLER</span>
-            //   </div>
+            //                <span class="product-badge-text">BEST SELLER</span>
+            //              </div>
             //         </div>
             //         <span class="cart-price cart-column">$5.00</span>
             //         <div class="cart-quantity cart-column">
@@ -52,6 +52,15 @@ function displayCart() {
     newItem.appendChild(newItemTitle);
     newRow.appendChild(newItem);
     parent.appendChild(newRow);
+    var newItemPrice = document.createElement('span');
+    newItemPrice.className = "cart-price cart-column";
+    newItemPrice.innerHTML = "$" + 5 * parseFloat(cartItem.quantity) + ".00"
+    newRow.appendChild(newItemPrice);
+    var newItemQuantity = document.createElement('div');
+    newItemQuantity.className = "cart-quantity cart-column";
+    
+
+
 
     totalPrice += 5 * parseFloat(cartItem.quantity)
   }

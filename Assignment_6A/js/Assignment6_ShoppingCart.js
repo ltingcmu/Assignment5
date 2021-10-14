@@ -38,13 +38,16 @@ function displayCart() {
     
     var newRow = document.createElement('div');
     newRow.className = "cart-row";
+
     var newItem = document.createElement('div');
     newItem.className = "cart-item cart-column";
+
     var newItemPic = document.createElement('img');
     newItemPic.className = "cart-item-image";
     newItemPic.src = "assets/CinBun.png";
     newItemPic.width = 100;
     newItemPic.height = 100;
+
     var newItemTitle = document.createElement('span');
     newItemTitle.className = "cart-item-title";
     newItemTitle.innerHTML = cartItem.productName + " - " + cartItem.glazing;
@@ -52,14 +55,25 @@ function displayCart() {
     newItem.appendChild(newItemTitle);
     newRow.appendChild(newItem);
     parent.appendChild(newRow);
+
     var newItemPrice = document.createElement('span');
     newItemPrice.className = "cart-price cart-column";
     newItemPrice.innerHTML = "$" + 5 * parseFloat(cartItem.quantity) + ".00"
     newRow.appendChild(newItemPrice);
+
     var newItemQuantity = document.createElement('div');
     newItemQuantity.className = "cart-quantity cart-column";
-    
+    newItemQuantity.innerHTML = cartItem.quantity;
+    newRow.appendChild(newItemQuantity);
 
+    var redButton = document.createElement('button');
+    redButton.className = "btn btn-danger";
+    newItemQuantity.appendChild(redButton);
+
+    var removeIcon = document.createElement('img');
+    removeIcon.className = "trash-icon-img";
+    removeIcon.src = "assets/trash_icon.png";
+    redButton.innerHTML = '<img src="assets/trash_icon.png" width="16" height="18">';
 
 
     totalPrice += 5 * parseFloat(cartItem.quantity)

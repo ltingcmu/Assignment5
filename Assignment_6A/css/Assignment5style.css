@@ -849,6 +849,7 @@ source:  https://www.youtube.com/watch?v=YeFzkC2awTM
     border-radius: .3em;
     padding: 10px 20px 10px 20px;
     align-items: center;
+    margin-left: 10px;
 }
 
 .btn-danger:hover {
@@ -879,7 +880,8 @@ source:  https://www.youtube.com/watch?v=YeFzkC2awTM
 .cart-total {
     text-align: right;
     margin-top: 20px;
-    padding-left: 35px;
+    margin-left: 100px;
+    padding-left: 70px;
     font-size: 1.2em;
 }
 

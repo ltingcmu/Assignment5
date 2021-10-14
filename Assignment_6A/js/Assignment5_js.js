@@ -48,7 +48,7 @@ function addToCart() {
   let cartItemsStr = localStorage.getItem('cartItems')
   // convert to json object
   var cartItems = JSON.parse(cartItemsStr);
-  // if no local stored car item array, initialize to empty array
+  // if no local stored cart item array, initialize to empty array
   if (cartItems == null) {
     cartItems = JSON.parse('[]');
   }

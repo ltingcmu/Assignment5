@@ -7,27 +7,6 @@ function off() {
   document.getElementById("overlay").style.display = "none";
 }
 
-//Dropdown Button
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content 
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.drop-btn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-*/
 
 
 //Add to Cart and local storage - https://blog.logrocket.com/localstorage-javascript-complete-guide/ ; https://stackoverflow.com/questions/55328748/how-to-store-and-retrieve-shopping-cart-items-in-localstorage/55328889
@@ -59,7 +38,7 @@ function addToCart() {
   }
   
   // construct array data of form selections
-  //The FormData part creates an array and the for loop turns it into a JSON object. CartItems is an array of JSON
+  // The FormData part creates an array and the for loop turns it into a JSON object. CartItems is an array of JSON
   const newItem = Array.from(new FormData(form));
 
   // creating empty object to convert array format
@@ -80,7 +59,49 @@ function addToCart() {
   localStorage.setItem('cartItems', JSON.stringify(cartItems));
   // return false so that the button doesn't load a new page
   return false;
+
+
 }
+
+
+// console.log(window.localStorage);
+// var itemsCount = localStorage.getItem("cartItems")
+// console.log(itemsCount.length);
+
+
+
+// Product Details Page updates
+
+var storedSettings = JSON.parse(localStorage.getItem('cartItems'));
+console.log(storedSettings);
+
+
+  function showAlert() {
+
+    var numberItems = storedSettings.length
+    var numberItemsUpdated = numberItems + 1
+
+    if (numberItems === null) {
+      alert("Your Cart now has 1 item!");
+    }
+
+    else {
+      alert("Your Cart now has " + numberItemsUpdated + " items!");
+      console.log(storedSettings.length);
+      yourCart = document.getElementsByClassName("your-cart");
+      yourCart.text = "Your Cart" + "(" + numberItemsUpdated + ")";
+    }
+    
+    return false; 
+
+  }
+
+
+
+
+
+
+
 
 
 

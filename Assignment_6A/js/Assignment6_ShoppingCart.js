@@ -89,4 +89,10 @@ function displayCart() {
 
 window.onload = function() {
   displayCart();
+  updateCartLink();
 }
+
+
+
+
+

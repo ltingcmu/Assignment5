@@ -74,12 +74,15 @@ function addToCart() {
 
 var storedSettings = JSON.parse(localStorage.getItem('cartItems'));
 console.log(storedSettings);
+window.onload = updateCartLink;
 
-
-  function showAlert() {
+function showAlert() {
 
     var numberItems = storedSettings.length
     var numberItemsUpdated = numberItems + 1
+
+    // document.getElementById("your-cart").innerHTML = numberItemsUpdated;
+    // console.log(document.getElementById("your-cart").innerHTML = numberItemsUpdated);
 
     if (numberItems === null) {
       alert("Your Cart now has 1 item!");
@@ -87,14 +90,28 @@ console.log(storedSettings);
 
     else {
       alert("Your Cart now has " + numberItemsUpdated + " items!");
+      console.log(numberItems);
+      console.log(numberItemsUpdated);
       console.log(storedSettings.length);
-      yourCart = document.getElementsByClassName("your-cart");
-      yourCart.text = "Your Cart" + "(" + numberItemsUpdated + ")";
     }
-    
-    return false; 
+
+    return false;
 
   }
+
+function updateCartLink() {
+    console.log("hello");
+    var numberItems = storedSettings.length
+    // var numberItemsUpdated = numberItems + 1
+
+    var yourCartLink = document.getElementById("your-cart").innerHTML = "Your Cart " + numberItems;
+    console.log(yourCartLink);
+
+  }
+
+
+
+
 
 
 

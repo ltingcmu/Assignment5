@@ -110,11 +110,35 @@ function updateCartLink() {
   }
 
 
+// Product Detail Radio Button Event Listener and Handler - changes title of product based on radio button selection
 
+// // function titleChange(val) {
+//   // for (var i = 0 ; i < document.getElementsByName('quantity').length; i++) {
+//       // document.getElementsByName('quantity')[i].onclick = function() {
+//       document.getElementsByName('quantity').onclick = function() {
+//         //value of the clicked radio button
+//         console.log('this is ',this.value);
+//         //changing title
+//         var result = document.querySelector('#result');
+//         result.textContent = this.value + result.innerHTML;
+//       }
+//   // }
+// // }
 
+function titleChange() {
+  console.log(document.querySelector('input[name="quantity"]:checked').value);
+  
+  var result = document.getElementById('title-result');
+  var quantityNumber = document.querySelector('input[name="quantity"]:checked').value;
 
-
-
+  if (quantityNumber === "1") {
+    result.innerHTML = document.querySelector('input[name="quantity"]:checked').value + " Original Cinnamon Roll";
+  }
+  else {
+    result.innerHTML = document.querySelector('input[name="quantity"]:checked').value + " Original Cinnamon Rolls";
+  }
+  
+}
 
 
 

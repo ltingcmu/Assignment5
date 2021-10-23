@@ -54,6 +54,7 @@
 
 			<div class="col-60p-details">
 				<h1 id ="title-result">Original Cinnamon Roll</h1>
+				<h1 id="glazing-name"></h1>
 					<h2>$5.00 / roll</h2>
 					<p>A favorite of the bakery staff and customers, this soft, delicate roll is perfumed by a sweet pure vanilla flavor for an effect and taste that is simply divine!</p>
 				
@@ -70,22 +71,14 @@
 						<input type="radio" name="quantity" value="12" id="radio-four" onclick="titleChange()"/>
 						<label for="12">12</label>
 
-
-						<!--- Old buttons 
-							<button class="quantity-btn">1</button>
-							<button class="quantity-btn">3</button>
-							<button class="quantity-btn">6</button>
-							<button class="quantity-btn">12</button>
-						--->
-
 					<h2>Glazing</h2>
 					
 						<div class="dropdown">
-						  <select id="myDropdown" name="glazing" class="dropdown-content">
-						    <option value="none">No Glazing</option>
-						    <option value="sugar-milk">Sugar-Milk</option>
-						    <option value="vanilla-milk">Vanilla-Milk</option>
-						    <option value="double-chocolate">Double Chocolate</option>
+						  <select id="myDropdown" name="glazing" class="dropdown-content" onclick="titleChange2()">
+						    <option value="none" >No Glazing</option>
+						    <option value="sugar-milk" >Sugar-Milk</option>
+						    <option value="vanilla-milk" >Vanilla-Milk</option>
+						    <option value="double-chocolate" >Double Chocolate</option>
 						  </select>
 						</div>
 

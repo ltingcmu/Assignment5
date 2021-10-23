@@ -140,6 +140,15 @@ function titleChange() {
   
 }
 
+function titleChange2() {
+  var glazingSelect = document.getElementsByName('glazing')[0];
+  var glazingName = glazingSelect.selectedIndex
+  console.log(glazingSelect.options[glazingName].text);
+
+  var glazingTitle = document.getElementById('glazing-name');
+  glazingTitle.innerHTML = glazingSelect.options[glazingName].text;
+
+}
 
 
 

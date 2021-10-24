@@ -8,7 +8,6 @@ function off() {
 }
 
 
-
 //Add to Cart and local storage - https://blog.logrocket.com/localstorage-javascript-complete-guide/ ; https://stackoverflow.com/questions/55328748/how-to-store-and-retrieve-shopping-cart-items-in-localstorage/55328889
 
 
@@ -61,6 +60,7 @@ function addToCart() {
   return false;
 
 
+
 }
 
 
@@ -72,26 +72,24 @@ function addToCart() {
 
 // Product Details Page updates
 
-var storedSettings = JSON.parse(localStorage.getItem('cartItems'));
-console.log(storedSettings);
 window.onload = updateCartLink;
 
 function showAlert() {
 
+    var storedSettings = JSON.parse(localStorage.getItem('cartItems'));
+
     var numberItems = storedSettings.length
-    var numberItemsUpdated = numberItems + 1
 
     // document.getElementById("your-cart").innerHTML = numberItemsUpdated;
     // console.log(document.getElementById("your-cart").innerHTML = numberItemsUpdated);
 
-    if (numberItems === null) {
+    if (numberItems === 1) {
       alert("Your Cart now has 1 item!");
     }
 
     else {
-      alert("Your Cart now has " + numberItemsUpdated + " items!");
+      alert("Your Cart now has " + numberItems + " items!");
       console.log(numberItems);
-      console.log(numberItemsUpdated);
       console.log(storedSettings.length);
     }
 
@@ -100,7 +98,9 @@ function showAlert() {
   }
 
 function updateCartLink() {
-    console.log("hello");
+
+    var storedSettings = JSON.parse(localStorage.getItem('cartItems'));
+
     var numberItems = storedSettings.length
     // var numberItemsUpdated = numberItems + 1
 
@@ -112,25 +112,13 @@ function updateCartLink() {
 
 // Product Detail Radio Button Event Listener and Handler - changes title of product based on radio button selection
 
-// // function titleChange(val) {
-//   // for (var i = 0 ; i < document.getElementsByName('quantity').length; i++) {
-//       // document.getElementsByName('quantity')[i].onclick = function() {
-//       document.getElementsByName('quantity').onclick = function() {
-//         //value of the clicked radio button
-//         console.log('this is ',this.value);
-//         //changing title
-//         var result = document.querySelector('#result');
-//         result.textContent = this.value + result.innerHTML;
-//       }
-//   // }
-// // }
-
 function titleChange() {
   console.log(document.querySelector('input[name="quantity"]:checked').value);
   
   var result = document.getElementById('title-result');
   var quantityNumber = document.querySelector('input[name="quantity"]:checked').value;
 
+  // Title changes based on if selection is singular or plural
   if (quantityNumber === "1") {
     result.innerHTML = document.querySelector('input[name="quantity"]:checked').value + " Original Cinnamon Roll";
   }
@@ -140,6 +128,7 @@ function titleChange() {
   
 }
 
+// Dropdown menu for glazing selecting text and updating title
 function titleChange2() {
   var glazingSelect = document.getElementsByName('glazing')[0];
   var glazingName = glazingSelect.selectedIndex

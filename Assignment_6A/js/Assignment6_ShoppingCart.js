@@ -30,7 +30,13 @@ function displayCart() {
   var totalPrice = 0
 
   var parent = document.getElementById('cart-items-list');
+  //clear things in cart view already so we can freshly display cart
+  parent.innerHTML="";
+
   for (var i = 0; i < cartItems.length; i++) {
+
+    //for the delete button
+    const index = i;
 
     var cartItem = cartItems[i]
 
@@ -68,6 +74,9 @@ function displayCart() {
 
     var redButton = document.createElement('button');
     redButton.className = "btn btn-danger";
+    redButton.onclick = function() {
+        removeItem(index);
+      }
     newItemQuantity.appendChild(redButton);
 
     var removeIcon = document.createElement('img');
@@ -85,6 +94,21 @@ function displayCart() {
 
 }
 
+function removeItem(index){
+  var cartItemsStr = localStorage.getItem('cartItems');
+  //convert to json object
+  var cartItems = JSON.parse(cartItemsStr);
+  //if no local stored cart item arry, initialize to empty array
+  if (cartItems == null){
+    cartItems = JSON.parse('[]');
+  }
+
+  cartItems.splice(index, 1)
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  displayCart();
+  return false;
+
+}
 
 
 window.onload = function() {
